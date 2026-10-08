@@ -1,5 +1,14 @@
 # K-Learn Hub
 
+## Week 4 submission: Agile sprint planning
+
+- [Sprint 01](SPRINT_01.md): goal, prioritized backlog, two refined items, task order, check-ins and Definition of Done.
+- [AI-use log](AI_LOG.md): the 8 October 2026 planning entry records actual work and limitations.
+- Planned sprint: 8–15 October 2026. Implementation and verification are pending; this is a prospective plan.
+
+**Current source versus initial proposal:** Code under `project/` uses React/TypeScript, Next-style routes through Vinext/Vite, Cloudflare D1 and Drizzle. The FastAPI/PostgreSQL approach later in this document is the original proposal, not the implemented backend. Earlier roadmap and MVP criteria are plans, not evidence that every check has passed.
+
+
 ## Korean Class Scheduling and Student Management Platform
 
 **Document status:** Project idea and initial product plan  
@@ -627,3 +636,4 @@ Before accepting any new feature, ask:
 > Does this feature directly help the teacher publish a class, the student register, or the teacher manage that registration?
 
 If the answer is no, place it in a later roadmap stage rather than the MVP.
+

@@ -121,3 +121,30 @@ The team reviewed the documentation and updated it to match the actual state of 
 ## Verification Statement
 
 AI-generated suggestions and code were reviewed and tested by the project team. The team remains responsible for the final implementation, documentation, and submitted repository.
+
+
+---
+
+## 2026-10-08 — Week 4: Sprint 01 planning
+
+**Tools used:** ChatGPT / Codex, read-only GitHub retrieval, local ZIP/PDF inspection.
+
+**User request:** "mày hãy thực hiện bài tập này cho tao, và hay chi tiết cho tao biết tao cần update hay upload file nào lên github" (prepare the homework and explain exactly which files to update or upload).
+
+**Prompt context:** Week 4 requires a one-week goal, at least five prioritized backlog items, two refined items, small assigned tasks, asynchronous check-ins, a Definition of Done and an AI-use record. Use the existing K-Learn Hub MVP and ask before writing to GitHub.
+
+**Retained in the proposed deliverable:** The create/publish/register/roster workflow, current React/TypeScript and D1 implementation, existing AI-log history, and a small one-week scope.
+
+**Changed or rejected:** Broad feature expansion was deferred. Input-validation reliability and repeatable regression checks were selected instead. Hours were used rather than unexplained story points. No retrospective sprint activity, test pass, human review or team agreement was invented.
+
+**Error caught during source review:** The registration route uses body.name?.trim() and body.email?.trim() after a TypeScript cast. A cast does not validate incoming JSON: non-string fields can throw and reach the generic 500 handler. BL-01 addresses this source-level defect; it has not yet been reproduced against a running server in this session. The review was AI-assisted, not claimed as an independently discovered human finding.
+
+**One decision and its explainable rationale:** Keep the existing stack and prioritize reliable registration over adding new features. The existing user workflow already addresses the product need; a small validation fix plus regression coverage is easier to finish and verify within a student-sized sprint. The project owner should review and be able to explain this reasoning before submission.
+
+**Verification actually performed:** Read the Week 4 homework requirements and relevant code/schema/package metadata; checked current GitHub files against the uploaded source; checked the planning document for all six homework requirements and consistent hour totals. No application build, lint, runtime/API test, browser acceptance test or sprint implementation was performed for this documentation submission.
+
+**Artifacts:** SPRINT_01.md; this appended AI_LOG.md entry; a navigation/status note added to the existing root README.md.
+
+**Review and repository status:** Prepared for owner review. No GitHub files were changed by this planning task. Proposed initial task owner: Chessy10; one-week window: 8–15 October 2026; availability is a planning assumption. No new Issue/PR/commit is claimed. Baseline inspected: 64bb150d7ee53fce0cf366beeb19c5515557c59c.
+
+**Historical-log note:** Earlier entries above are preserved from GitHub as historical statements; their past test claims were not re-verified in this session.
