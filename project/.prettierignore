@@ -1,0 +1,17 @@
+﻿node_modules/
+.next/
+.vinext/
+.wrangler/
+.sites-runtime/
+dist/
+build/
+vendor/
+.openai/
+components/ui/
+examples/
+drizzle/meta/
+cloudflare-env.d.ts
+components.json
+next-env.d.ts
+pnpm-lock.yaml
+pnpm-workspace.yaml

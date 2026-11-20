@@ -28,7 +28,11 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
       }
       updates.status = body.status;
     }
-    const [updated] = await getDb().update(classes).set(updates).where(eq(classes.id, Number(id))).returning();
+    const [updated] = await getDb()
+      .update(classes)
+      .set(updates)
+      .where(eq(classes.id, Number(id)))
+      .returning();
     if (!updated) return Response.json({ error: "Class not found." }, { status: 404 });
     return Response.json({ class: updated });
   } catch (error) {

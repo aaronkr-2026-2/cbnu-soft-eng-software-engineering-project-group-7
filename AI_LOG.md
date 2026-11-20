@@ -148,3 +148,43 @@ AI-generated suggestions and code were reviewed and tested by the project team. 
 **Review and repository status:** Prepared for owner review. No GitHub files were changed by this planning task. Proposed initial task owner: Chessy10; one-week window: 8–15 October 2026; availability is a planning assumption. No new Issue/PR/commit is claimed. Baseline inspected: 64bb150d7ee53fce0cf366beeb19c5515557c59c.
 
 **Historical-log note:** Earlier entries above are preserved from GitHub as historical statements; their past test claims were not re-verified in this session.
+
+---
+
+## 2026-11-20 - Reliable Programming: Code Quality and Validation
+
+**Tools used:** ChatGPT, VS Code, PowerShell, ESLint, Prettier, pnpm, Vinext.
+
+**What I asked for:**
+Improve code quality, document coding conventions, configure automated linting, and strengthen input validation.
+
+**What I kept as-is:**
+- Existing React, TypeScript, Vinext and Cloudflare D1 architecture.
+- Existing class creation, publishing, registration and roster workflow.
+- Existing database schema and migrations.
+
+**What I changed or rejected, and why:**
+- Added `project/docs/STYLE.md` for coding and UI conventions.
+- Added Prettier configuration and scripts.
+- Added a GitHub Actions workflow for ESLint.
+- Added reusable validation helpers in `project/lib/validation.ts`.
+- Strengthened class creation input validation.
+- Extracted the class creation form into a separate `CreateClassForm` component.
+- Avoided adding new product features because this task focuses on reliability.
+
+**Something the AI got wrong that I had to catch:**
+Browser-native date, time and number inputs blocked invalid values before they reached the server. These browser checks were not treated as proof of server-side validation.
+
+**Verification performed:**
+- ESLint passed locally.
+- Prettier check passed locally.
+- Production build completed successfully.
+- Valid class creation was tested in the browser.
+- Direct API invalid-input tests and API failure scenarios still require verification.
+
+**Human review:**
+The project owner ran the checks and tested the application locally.
+
+**Repository status:**
+Changes are prepared locally. GitHub commit, push and Actions success have not yet been verified.
+

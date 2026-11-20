@@ -1,0 +1,12 @@
+node_modules/
+.sites-runtime/
+.wrangler/
+dist/
+.next/
+.env
+.env.*
+!.env.example
+.openai/
+
+.vinext/
+wrangler.local.toml
